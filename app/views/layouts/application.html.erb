@@ -1,16 +1,67 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Mysite</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Header with Navigation</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+    header {
+        background-color: #EC715F;
+        width: 100%;
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+    .header-content {
+        max-width: 1024px; /* ヘッダー内の要素の最大幅を設定 */
+        margin: 0 auto; /* 中央揃え */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo img {
+        width: 150px; /* ロゴの幅 */
+    }
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    nav ul li {
+        margin-right: 30px;
+    }
+    nav ul li:last-child {
+        margin-right: 30;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: #fafafa;
+        font-size: 16px;
+    }
+</style>
+</head>
+<body>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<header>
+    <div class="header-content">
+        <div class="logo">
+            <a class="navbar-brand" href="/"><%= image_tag('logo.png') %></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-  <body>
-    <%= yield %>
-  </body>
+</body>
 </html>
