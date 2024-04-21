@@ -3,7 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Header with Navigation</title>
+<title>Mysite</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    
+    <script src="https://kit.fontawesome.com/853b12f8a1.js" crossorigin="anonymous"></script>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
 <style>
     body {
         margin: 0;
@@ -58,13 +68,12 @@
         font-size: 20px;
     }
     main {
-        width: 100%;
         background-color: #ECEFF1;
         text-align: center;
         padding-top: 90px;
-        height: 100%;
     }
     main-content {
+        height: 100%;
         width: 920px;
     }
 
@@ -114,6 +123,25 @@
     height: 100%; /* コンテナに対して100%の高さ */
     object-fit: cover; /* 画像を切り抜いてコンテナにフィットさせる */
 }
+.main-feature {
+    background-color: #fafafa;
+    width: 100%; /* コンテナに対して100%の幅 */
+}
+.main-feature-contena {
+    margin: 0 auto; /* 中央寄せ */
+    width: 980px; 
+}
+.main-feature h1 {
+        margin: 0;
+        padding-top: 90px;
+}
+.main-feature p {
+    font-size: 16px;
+    width: 920px;
+    margin: 0 auto; /* 中央寄せ */
+
+}
+
 
 </style>
 </head>
@@ -126,7 +154,7 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Portfolio</a></li>
+                <li><a href="div class="main-content"">Portfolio</a></li>
                 <li><a href="#">Feature</a></li>
                 <li><a href="#">Profile</a></li>
                 <li><a href="#">Contact</a></li>
@@ -173,6 +201,27 @@
             <!-- Repeat the above div block with different image sources -->
         </div>
     </div>
+    <div class="main-feature">
+     <div class="main-feature-contena">
+        <h1>Feature</h1>
+        <div class="additional-element"></div>
+    <p>It islong established fact that a reader will be distracted by the readable</p>
+    <p>content of a page when looking at its layout.</p>
+    <p>The pointof using Lorem Ipsum is has a more-or-less norml distribution of letters</p>
+
+        <div class="icon">
+            <!-- Repeat the following div block 9 times for each image -->
+                <i class="fa-solid fa-code"></i>
+                <i class="fa-solid fa-desktop"></i>
+            <i class="fa-solid fa-gears"></i>
+
+            <!-- Repeat the above div block with different image sources -->
+        </div>
+        
+     </div>
+    </div>
+    
+    
 </main>
 
 </body>
