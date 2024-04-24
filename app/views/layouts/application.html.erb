@@ -139,9 +139,44 @@
     font-size: 16px;
     width: 920px;
     margin: 0 auto; /* 中央寄せ */
-
 }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+        width: 980px;
+    }
 
+    .icon {
+        width: 320px;
+        text-align: center;
+    }
+
+    .icon-container {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon-container i {
+        font-size: 60px; /* アイコンのサイズ */
+    }
+
+    .title {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 16px;
+        margin-bottom: 90px;
+    }
+</style>
 
 </style>
 </head>
@@ -208,19 +243,31 @@
     <p>It islong established fact that a reader will be distracted by the readable</p>
     <p>content of a page when looking at its layout.</p>
     <p>The pointof using Lorem Ipsum is has a more-or-less norml distribution of letters</p>
-
-        <div class="icon">
-            <!-- Repeat the following div block 9 times for each image -->
-                <i class="fa-solid fa-code"></i>
-                <i class="fa-solid fa-desktop"></i>
-            <i class="fa-solid fa-gears"></i>
-
-            <!-- Repeat the above div block with different image sources -->
+<div class="container">
+    <div class="icon">
+        <div class="icon-container">
+            <i class="fa-solid fa-code"></i>
         </div>
-        
-     </div>
+        <div class="title">Strength1</div>
+        <div class="description">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</div>
     </div>
-    
+
+    <div class="icon">
+        <div class="icon-container">
+            <i class="fa-solid fa-desktop"></i>
+        </div>
+        <div class="title">Strength2</div>
+        <div class="description">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</div>
+    </div>
+
+    <div class="icon">
+        <div class="icon-container">
+            <i class="fa-solid fa-gears"></i>
+        </div>
+        <div class="title">Strength3</div>
+        <div class="description">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</div>
+    </div>
+</div>
     
 </main>
 
