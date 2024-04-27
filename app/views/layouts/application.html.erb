@@ -69,7 +69,6 @@
     }
     main {
         background-color: #ECEFF1;
-        text-align: center;
         padding-top: 90px;
     }
     main-content {
@@ -132,10 +131,12 @@
     width: 980px; 
 }
 .main-feature h1 {
+        text-align: center;
         margin: 0;
         padding-top: 90px;
 }
 .main-feature p {
+        text-align: center;
     font-size: 16px;
     width: 920px;
     margin: 0 auto; /* 中央寄せ */
@@ -180,11 +181,13 @@
     background-color: #ECEFF1;
 }   
 .main-profile h1 {
+        text-align: center;
         margin: 0;
         padding-top: 90px;
 }
 .main-profile p {
         margin: 0;
+        text-align: center;
 }
 
 .container-b {
@@ -210,47 +213,63 @@
     width: 512px;
     
 }
+.profile h1 {
+        text-align: center;
+} 
 .name {
     font-size: 20px;
     font-weight: bold;
     
 }
 .profile p {
+    text-align: left; /* Align text to the left */
     margin-top: 5px;
 }
 .title {
     font-size: 20px;
     margin-top: 20px;
 }
+.main-contact {
+    background-color: #fafafa;
+}
 .container-c {
+        display: flex;
+        justify-content: space-between;
         margin: 0 auto;
     width: 800px;
     padding-top: 30px;
+        padding-bottom: 90px;
 }
-.mail{
+.mail {
     font-size: 20px;
+    text-align: left; /* Align text to the left */
 }
 .tell {
-    font-size: 20px;
     margin-top: 20px;
+    font-size: 20px;
+    text-align: left; /* Align text to the left */
 }
 
 .sns {
-      text-align: left;
-    width: 400px;
+    width: 400px; /* Adjust width as needed */
+    text-align: left; /* Align text to the left */
 }
 
 .address {
-        margin:0; 
-      text-align: left;
-    width: 400px;
-    display: inline-block;
+    width: 400px; /* Adjust width as needed */
 }
-.mail-address {
+.mail-address, .tell-number {
+    text-align: left; /* Align text to the left */
     padding-top: 5px;
 }
+.icon2 {
+    margin-top: 5px;
+}
 
-    
+    .icon2-container i {
+        font-size: 60px;
+    margin-right: 20px;
+    }
 </style>
 
 </style>
@@ -375,17 +394,25 @@
     <p>It islong established fact that a reader will be distracted by the readable
     <br>content of a page when looking at its layout<br>
     The pointof using Lorem Ipsum is has a more-or-less norml distribution of letters</p>
-</div>
   <div class="container-c">
         <div class="address">
             <div class="mail"><strong>Mail</strong></div>
-            <a class="mail-address" href="xx@xxx.com">xxx@xxx.com</a>
+            <a class="mail-address" href="/">xxx@xxx.com</a>
             <div class="tell"><strong>Tell</strong></div>
+            <a class="tell-nunber" href="/">000-0000-0000</a>
         </div>
         <div class="sns">
-            
+            <div class="mail"><strong>SNS</strong></div>
+    <div class="icon2">
+        <div class="icon2-container">
+<i class="fa-brands fa-twitter"></i>
+<i class="fa-brands fa-facebook-f"></i>
+<i class="fa-brands fa-instagram"></i>
+    </div>
+
         </div>
   </div>
+</div>
 </main>
 
 </body>
