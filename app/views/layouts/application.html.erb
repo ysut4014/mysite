@@ -201,7 +201,9 @@
 .picture {
     width: 512px;
 }
+
 .profile-picture {
+    border-radius: 50%; 
         margin: 0 auto;
     width: 250px;
     height: 250px;
@@ -242,12 +244,10 @@
 }
 .mail {
     font-size: 20px;
-    text-align: left; /* Align text to the left */
 }
 .tell {
     margin-top: 20px;
     font-size: 20px;
-    text-align: left; /* Align text to the left */
 }
 
 .sns {
@@ -256,10 +256,11 @@
 }
 
 .address {
+    margin-left: 139px;
     width: 400px; /* Adjust width as needed */
+    
 }
 .mail-address, .tell-number {
-    text-align: left; /* Align text to the left */
     padding-top: 5px;
 }
 .icon2 {
@@ -269,6 +270,18 @@
     .icon2-container i {
         font-size: 60px;
     margin-right: 20px;
+    }
+footer {
+    display: flex;
+    justify-content: center; /* 水平方向に中央揃え */
+    align-items: center; /* 垂直方向に中央揃え */
+        background-color: #EC715F;
+        height: 60px;
+    
+}
+    footer p {
+        text-align: center;
+        color: #FAFAFA
     }
 </style>
 
@@ -373,7 +386,9 @@
   <div class="container-b">
         <div class="picture">
          <div class="profile-picture">
-          <img src="assets/my-icon.jpg">
+          <img src="assets/my-icon.jpg" style="    border-radius: 50%; 
+        margin: 0 auto;
+    width: 250px; height: 250px;">
          </div>
         </div>
         <div class="profile">
@@ -414,6 +429,9 @@
   </div>
 </div>
 </main>
+<footer>
+    <p>@2017 WebCamp</p>
+</footer>
 
 </body>
 </html>
